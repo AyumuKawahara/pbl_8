@@ -1,5 +1,7 @@
 export const univs = [
-  { id: 1, bunkei: 0, rikei: 100, name: '東京大学' },
+  // 医学部:1
+  { univ_id: 1, dep_id: 1, bunkei: 0, rikei: 100, univ_name: '東京大学', dep: '理科III類' },
+  { univ_id: 1, dep_id: 2, bunkei: 0, rikei: 100, univ_name: '東京大学', dep: '理科II類' },
   { id: 2, bunkei: 0, rikei: 100, name: '東京科学大学' },
   { id: 3, bunkei: 0, rikei: 100, name: '一橋大学' },
   { id: 4, bunkei: 0, rikei: 100, name: '京都大学' },
