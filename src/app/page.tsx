@@ -1,3 +1,16 @@
+'use client'
+
+import { useState } from 'react'
+
 export default function Home() {
-  return <div>hello</div>;
+  const [num, setNum] = useState(1)
+  return (
+    <div
+      onClick={(num) => {
+        setNum((num) => num + 1)
+      }}
+    >
+      {num}
+    </div>
+  )
 }
