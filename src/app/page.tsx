@@ -1,16 +1,10 @@
-'use client'
-
-import { useState } from 'react'
+import { univs } from '@/db/universities'
 
 export default function Home() {
-  const [num, setNum] = useState(1)
+  const data = univs
   return (
-    <div
-      onClick={(num) => {
-        setNum((num) => num + 1)
-      }}
-    >
-      {num}
+    <div>
+      <div>{data[0].id}</div> <div>{data[1].name}</div>
     </div>
   )
 }
