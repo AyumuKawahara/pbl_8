@@ -1,13 +1,13 @@
 import { Form } from '@/components/form'
+import { stfunivs } from '@/components/univs'
 import { Univs } from '@/components/univs'
-import { univs } from '@/db/universities'
 
 export default function Home() {
-  const data = univs
+  const data = stfunivs
   return (
     <div className="flex flex-col items-center">
       <Form />
-      <Univs />
+      <Univs stfunivs={data} />
     </div>
   )
 }
