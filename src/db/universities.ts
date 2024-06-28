@@ -1,4 +1,13 @@
-export const univs = [
+export type Univ = {
+  univ_id: number
+  dep_id: number
+  bunkei: number
+  rikei: number
+  univ_name: string
+  dep: string
+}
+
+export const univs: Univ[] = [
   // 医学部:1
   {
     univ_id: 1,
@@ -28,7 +37,7 @@ export const univs = [
     univ_id: 3,
     dep_id: 0,
     bunkei: 0,
-    rikei: 100,
+    rikei: 40,
     univ_name: '一橋大学',
     dep: 'あ',
   },
