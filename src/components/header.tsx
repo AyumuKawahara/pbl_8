@@ -9,7 +9,7 @@ export const Header = () => {
       </div>
       <div>
         <Image
-          src="/アリゲーター1.png"
+          src="/wanigator2.png"
           alt="アリゲーター先生"
           width={414}
           height={100}
