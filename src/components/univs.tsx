@@ -1,20 +1,20 @@
-import { Univ, univs } from '@/db/universities'
+import { univs } from '@/db/universities'
 
 // export const stfunivs = univs.filter((univer) => univer.rikei >= 100)
 
 export const Univs = ({ answer }) => {
   const user = {
-    rikei: 50,
-    bunkei: 50,
+    bunri: 0,
   }
 
   if(answer.q1 == "yes"){
-    user.rikei += 50
-  }else{
-    user.bunkei += 50
+    user.bunri = 1
   }
 
-  const stfunivs = univs.filter((univ) => univ.rikei <= user.rikei || univ.bunkei <= user.bunkei)
+  console.log(answer.q1)
+
+  const stfunivs = univs.filter((univ) => univ.bunri === user.bunri)
+
   return (
     <>
       {stfunivs.map((univ) => (
