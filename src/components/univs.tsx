@@ -70,9 +70,9 @@ export const Univs = ({ answer }) => {
   var stfunivs
 
   if(user.bunri === 0){
-    if(filunivs.some((filuniv) => filuniv.dep_id < 100)){
-      stfunivs = filunivs.filter((stfuniv) => stfuniv.dep_id >= 100)
-    }else if(user.dep_id.length === 0){
+    user.dep_id = user.dep_id.filter((usrdep) => usrdep >= 100)
+    
+    if(user.dep_id.length === 0){
       stfunivs = filunivs
     }else{
       stfunivs = filunivs.filter((stfuniv) => 
@@ -82,9 +82,9 @@ export const Univs = ({ answer }) => {
       )
     }
   }else{
-    if(filunivs.some((filuniv) => filuniv.dep_id >= 100)){
-      stfunivs = filunivs.filter((stfuniv) => stfuniv.dep_id < 100)
-    }else if(user.dep_id.length === 0){
+    user.dep_id = user.dep_id.filter((usrdep) => usrdep < 100)
+    
+    if(user.dep_id.length === 0){
       stfunivs = filunivs
     }else{
       stfunivs = filunivs.filter((stfuniv) =>
