@@ -65,11 +65,35 @@ export const Univs = ({ answer }) => {
   // (user.dep_id.some((id) => (filuniv.dep_id === id))
   // user.bunri === univ.bunri
 
-  const stfunivs = univs.filter( (univ) => 
-    (user.dep_id.some((id) => (univ.dep_id === id))
-  &&
-    user.bunri === univ.bunri)
-  )
+  const filunivs = univs.filter( (univ) => user.bunri === univ.bunri)
+
+  var stfunivs
+
+  if(user.bunri === 0){
+    if(filunivs.some((filuniv) => filuniv.dep_id < 100)){
+      stfunivs = filunivs.filter((stfuniv) => stfuniv.dep_id >= 100)
+    }else if(user.dep_id.length === 0){
+      stfunivs = filunivs
+    }else{
+      stfunivs = filunivs.filter((stfuniv) => 
+        (user.dep_id.some((id) => 
+          (stfuniv.dep_id === id))
+        )
+      )
+    }
+  }else{
+    if(filunivs.some((filuniv) => filuniv.dep_id >= 100)){
+      stfunivs = filunivs.filter((stfuniv) => stfuniv.dep_id < 100)
+    }else if(user.dep_id.length === 0){
+      stfunivs = filunivs
+    }else{
+      stfunivs = filunivs.filter((stfuniv) =>
+        (user.dep_id.some((id) =>
+          (stfuniv.dep_id === id))
+        )
+      )
+    }
+  }
 
   // const stfunivs = filunivs.filter((filuniv) => user.bunri === filuniv.bunri)
   return (
