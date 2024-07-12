@@ -101,8 +101,7 @@ export const Univs = ({ answer }) => {
       {stfunivs.map((univ) => (
         <div key = {univ.univ_id} className="border p-4">
           <p className="text-xl text-center" >{univ.univ_name} {univ.dep}</p>
-          <p className="text-xl text-center">{univ.desc[0]}</p>
-          <p className="text-xl text-center">{univ.desc[1]}</p>
+          <p className="text-xl text-center">{univ.desc}</p>
         </div>
       ))}
     </>
