@@ -102,14 +102,14 @@ export const Univs = ({ answer }) => {
           className="w-[1000px] h-[300px] relative border p-4 mb-10"
         >
           <div className="absolute h-[240px] w-[600px] z-10 top-0 left-0 bg-[#c3f2ff] p-2 rounded-md py-4">
-            <p className="text-xl text-center text-7xl ">{univ.univ_name}</p>
+            <p className="text-center text-7xl ">{univ.univ_name}</p>
             <div className="my-4"></div>
-            <p className="text-xl text-center text-6xl">{univ.dep}</p>
+            <p className="text-center text-6xl">{univ.dep}</p>
           </div>
           <div className="flex-grow"></div> {/* 上下の間隔を確保 */}
           <div className="absolute bottom-0 right-0  h-[180px] w-[480px] bg-teal-500 p-2 rounded-md py-4">
             <div className="my-4"></div>
-            <p className="text-xl text-center text-5xl px-20">{univ.desc}</p>
+            <p className="text-xl text-center px-20">{univ.desc}</p>
           </div>
         </div>
       ))}
