@@ -24,44 +24,49 @@ export const Form = () => {
   }
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="w-full">
+      <div className="my-12"></div>
       {questions.map((question, index) => (
         <div key={index} className="w-full flex flex-col items-center">
-          <p className="text-lg text-center w-full text-3xl ">{question}</p>
+          <p className="text-lg text-center w-full text-3xl font-extralight">
+            {question}
+          </p>
           <div className="flex items-center justify-center w-full px-10">
-            <label
-              htmlFor={`q${index + 1}-y`}
-              className="bg-sky-400 hover:cursor-pointer font-semibold text-lg px-9 py-3 m-5 rounded-md text-white"
-            >
-              Yes
-            </label>
-            <input
-              type="radio"
-              id={`q${index + 1}-y`}
-              value="yes"
-              className="hidden"
-              {...register(`q${index + 1}`)}
-            />
+            <div className="flex flex-col">
+              <label
+                htmlFor={`q${index + 1}-y`}
+                className="bg-sky-400 hover:cursor-pointer font-semibold text-lg px-9 py-3 m-5 rounded-md text-white"
+              >
+                Yes
+              </label>
+              <input
+                type="radio"
+                id={`q${index + 1}-y`}
+                value="yes"
+                {...register(`q${index + 1}`)}
+              />
+            </div>
             <div className="w-80"></div>
-            <label
-              htmlFor={`q${index + 1}-n`}
-              className="bg-rose-600 hover:cursor-pointer font-semibold text-lg px-9 py-3 m-5 rounded-md text-white"
-            >
-              No
-            </label>
-            <input
-              type="radio"
-              id={`q${index + 1}-n`}
-              value="no"
-              className="hidden"
-              {...register(`q${index + 1}`)}
-            />
+            <div className="flex flex-col">
+              <label
+                htmlFor={`q${index + 1}-n`}
+                className="bg-rose-600 hover:cursor-pointer font-semibold text-lg px-9 py-3 m-5 rounded-md text-white"
+              >
+                No
+              </label>
+              <input
+                type="radio"
+                id={`q${index + 1}-n`}
+                value="no"
+                {...register(`q${index + 1}`)}
+              />
+            </div>
           </div>
           {index < questions.length - 1 && (
-            <hr className="my-4 w-full border-t-2 border-gray-400" />
+            <hr className="my-12 w-1/2 mx-auto border-t-2 border-gray-400" />
           )}
         </div>
       ))}
-      <hr className="my-4 w-full border-t-2 border-gray-400" />
+      <hr className="my-12 w-1/2 mx-auto border-t-2 border-gray-400" />
       <div className="flex justify-center mt-4">
         <button
           type="submit"
