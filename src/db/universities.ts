@@ -4,7 +4,7 @@ export type Univ = {
   bunri: number
   univ_name: string
   dep: string
-  desc: string[]
+  desc: string
 }
 
 //bunri 文系0,理系1
@@ -20,8 +20,7 @@ export const univs: Univ[] = [
     bunri: 1,
     univ_name: '東京大学',
     dep: '理科III類',
-    desc: ['「生物学、化学、物理学を中心とする生命科学・物質科学・数理科学の基礎」を学びます.',
-      '医学部に進学する学生の多い科類です.'],
+    desc: '「生物学、化学、物理学を中心とする生命科学・物質科学・数理科学の基礎」を学びます. 医学部に進学する学生の多い科類です.',
   },
   {
     univ_id: 1,
@@ -29,8 +28,7 @@ export const univs: Univ[] = [
     bunri: 1,
     univ_name: '東京大学',
     dep: '理科II類',
-    desc: ['「生物学、化学、物理学を中心とする生命科学・物質科学・数理科学の基礎」を学びます.',
-      '理学部・工学部・農学部に進学する学生の多い科類です.'],
+    desc: '「生物学、化学、物理学を中心とする生命科学・物質科学・数理科学の基礎」を学びます. 理学部・工学部・農学部に進学する学生の多い科類です.',
   },
   {
     univ_id: 1,
@@ -38,8 +36,7 @@ export const univs: Univ[] = [
     bunri: 1,
     univ_name: '東京大学',
     dep: '理科I類',
-    desc: ['「数学、物理学、化学を中心とする数理科学・物質科学・生命科学の基礎」を学びます.',
-      '理学部・工学部に進学する学生の多い科類です.'],
+    desc: '「数学、物理学、化学を中心とする数理科学・物質科学・生命科学の基礎」を学びます. 理学部・工学部に進学する学生の多い科類です.',
   },
   {
     univ_id: 1,
@@ -47,8 +44,7 @@ export const univs: Univ[] = [
     bunri: 0,
     univ_name: '東京大学',
     dep: '文科III類',
-    desc: ['「言語、思想、歴史を中心とする人文科学全般の基礎」を学びます.',
-      '文学部・教育学部に進学する学生の多い科類です.'],
+    desc: '「言語、思想、歴史を中心とする人文科学全般の基礎」を学びます. 文学部・教育学部に進学する学生の多い科類です.',
   },
   {
     univ_id: 1,
@@ -56,8 +52,7 @@ export const univs: Univ[] = [
     bunri: 0,
     univ_name: '東京大学',
     dep: '文科II類',
-    desc: ['「経済を中心とする社会科学全般の基礎」を学びます.',
-      '経済学部に進学する学生の多い科類です.'],
+    desc: '「経済を中心とする社会科学全般の基礎」を学びます. 経済学部に進学する学生の多い科類です.',
   },
   {
     univ_id: 1,
@@ -65,8 +60,7 @@ export const univs: Univ[] = [
     bunri: 0,
     univ_name: '東京大学',
     dep: '文科I類',
-    desc: ['「法と政治を中心とする社会科学全般の基礎」を学びます.',
-      '法学部に進学する学生の多い科類です.'],
+    desc: '「法と政治を中心とする社会科学全般の基礎」を学びます. 法学部に進学する学生の多い科類です.',
   },
   {
     univ_id: 2,
@@ -74,7 +68,7 @@ export const univs: Univ[] = [
     bunri: 1,
     univ_name: '東京工業大学',
     dep: '理学院',
-    desc: ['A'],
+    desc: 'A',
   },
   {
     univ_id: 2,
@@ -82,7 +76,7 @@ export const univs: Univ[] = [
     bunri: 1,
     univ_name: '東京工業大学',
     dep: '工学院',
-    desc: ['A'],
+    desc: 'A',
   },
   {
     univ_id: 2,
@@ -90,7 +84,7 @@ export const univs: Univ[] = [
     bunri: 1,
     univ_name: '東京工業大学',
     dep: '物質理工学院',
-    desc: ['A'],
+    desc: 'A',
   },
   {
     univ_id: 2,
@@ -98,7 +92,7 @@ export const univs: Univ[] = [
     bunri: 1,
     univ_name: '東京工業大学',
     dep: '情報理工学院',
-    desc: ['A'],
+    desc: 'A',
   },
   {
     univ_id: 2,
@@ -106,7 +100,7 @@ export const univs: Univ[] = [
     bunri: 1,
     univ_name: '東京工業大学',
     dep: '生命理工学院',
-    desc: ['A'],
+    desc: 'A',
   },
   {
     univ_id: 2,
@@ -114,7 +108,7 @@ export const univs: Univ[] = [
     bunri: 1,
     univ_name: '東京工業大学',
     dep: '環境・社会理工学院',
-    desc: ['A'],
+    desc: 'A',
   },
   {
     univ_id: 3,
@@ -122,7 +116,7 @@ export const univs: Univ[] = [
     bunri: 0,
     univ_name: '一橋大学',
     dep: '商学部',
-    desc: ['3年次に商学科と経営学科を選択します.'],
+    desc: '3年次に商学科と経営学科を選択します.',
   },
   {
     univ_id: 3,
@@ -130,8 +124,7 @@ export const univs: Univ[] = [
     bunri: 1,
     univ_name: '一橋大学',
     dep: '経済学部',
-    desc: ['経済理論・経済統計専攻,応用経済専攻,経済史・地域経済専攻,比較経済・地域開発専攻',
-      'の4専攻体制を執っています.'],
+    desc: '経済理論・経済統計専攻,応用経済専攻,経済史・地域経済専攻,比較経済・地域開発専攻の4専攻体制を執っています.',
   },
   {
     univ_id: 3,
@@ -139,7 +132,7 @@ export const univs: Univ[] = [
     bunri: 0,
     univ_name: '一橋大学',
     dep: '法学部',
-    desc: ['法学や国際関係論の研究教育を主に行っています.'],
+    desc: '法学や国際関係論の研究教育を主に行っています.',
   },
   {
     univ_id: 3,
@@ -147,7 +140,7 @@ export const univs: Univ[] = [
     bunri: 0,
     univ_name: '一橋大学',
     dep: '社会学部',
-    desc: ['社会学を筆頭とし,哲学,心理学など多岐にわたる分野の教育・研究を行っています.'],
+    desc: '社会学を筆頭とし,哲学,心理学など多岐にわたる分野の教育・研究を行っています.',
   },
   // {
   //   univ_id: 4,

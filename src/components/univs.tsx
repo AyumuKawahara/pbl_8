@@ -67,7 +67,7 @@ export const Univs = ({ answer }) => {
 
   const filunivs = univs.filter( (univ) => user.bunri === univ.bunri)
 
-  var stfunivs
+  let stfunivs
 
   if(user.bunri === 0){
     user.dep_id = user.dep_id.filter((usrdep) => usrdep >= 100)
