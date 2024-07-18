@@ -24,7 +24,7 @@ export const univs: Univ[] = [
   },
   {
     univ_id: 1,
-    dep_id: 2,
+    dep_id: 3,
     bunri: 1,
     univ_name: '東京大学',
     dep: '理科II類',
@@ -68,7 +68,7 @@ export const univs: Univ[] = [
     bunri: 1,
     univ_name: '東京工業大学',
     dep: '理学院',
-    desc: 'A',
+    desc: '「真理を探究し知を創造する」をテーマに，自然界の基本原理，法則や論理を探究する学部です．',
   },
   {
     univ_id: 2,
@@ -76,7 +76,7 @@ export const univs: Univ[] = [
     bunri: 1,
     univ_name: '東京工業大学',
     dep: '工学院',
-    desc: 'A',
+    desc: '「新たな産業と文明を拓く学問」をテーマに，機械系，システム制御系，電気電子系，情報通信系，経営工学系について研究する学部です．',
   },
   {
     univ_id: 2,
@@ -84,7 +84,7 @@ export const univs: Univ[] = [
     bunri: 1,
     univ_name: '東京工業大学',
     dep: '物質理工学院',
-    desc: 'A',
+    desc: '「材料と科学の力で未来社会を創造する」をテーマに，固体材料に基盤を置く材料系と，分子・化学に基盤を置く応用化学系について研究する学部です．',
   },
   {
     univ_id: 2,
@@ -92,7 +92,7 @@ export const univs: Univ[] = [
     bunri: 1,
     univ_name: '東京工業大学',
     dep: '情報理工学院',
-    desc: 'A',
+    desc: '「情報化社会の未来を創造する」をテーマに，情報に関する高度な理論から最先端の技術まで，理学と工学の両方の視点から追究していく学部です．',
   },
   {
     univ_id: 2,
@@ -100,7 +100,7 @@ export const univs: Univ[] = [
     bunri: 1,
     univ_name: '東京工業大学',
     dep: '生命理工学院',
-    desc: 'A',
+    desc: '「複雑で多様な生命現象を解明」をテーマに，生命に関連する生物・化学・物理からなる理工学専門科目の基礎を幅広く学べる学部です．',
   },
   {
     univ_id: 2,
@@ -108,7 +108,7 @@ export const univs: Univ[] = [
     bunri: 1,
     univ_name: '東京工業大学',
     dep: '環境・社会理工学院',
-    desc: 'A',
+    desc: '「個々の建物から地球全体まで持続的環境を構築」をテーマに，建築学系，土木・環境工学系，融合理工学系，社会・人間科学系，イノベーション科学系について研究する学部です．',
   },
   {
     univ_id: 3,
