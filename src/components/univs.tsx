@@ -91,12 +91,17 @@ export const Univs = ({ answer }) => {
     }
   }
 
+  let fstfunivs
+
+  if(stfunivs.length <= 5) fstfunivs = stfunivs
+  else fstfunivs = stfunivs.slice(0, 5)
+
   // const stfunivs = filunivs.filter((filuniv) => user.bunri === filuniv.bunri)
   return (
     <>
       <p className=" text-5xl text-left">あなたの診断結果は</p>
       <div className="my-10"></div>
-      {stfunivs.map((univ) => (
+      {fstfunivs.map((univ) => (
         <div
           key={univ.univ_id}
           className="w-[1000px] h-[300px] relative border p-4 mb-10"
