@@ -98,7 +98,9 @@ export const Univs = ({ answer }) => {
 
   // const stfunivs = filunivs.filter((filuniv) => user.bunri === filuniv.bunri)
   return (
+
     <>
+      <div className="my-10"></div>
       <p className=" text-5xl text-left">あなたの診断結果は</p>
       <div className="my-10"></div>
       {fstfunivs.map((univ) => (
