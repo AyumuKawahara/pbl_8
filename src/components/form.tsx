@@ -26,15 +26,15 @@ export const Form = () => {
     <form onSubmit={handleSubmit(onSubmit)} className="w-full">
       <div className="my-12"></div>
       {questions.map((question, index) => (
-        <div key={index} className="w-full flex flex-col items-center">
-          <p className="text-lg text-center w-full text-3xl font-extralight">
+        <div key={index} className="flex w-full flex-col items-center">
+          <p className="w-full text-center text-lg font-extralight">
             {question}
           </p>
-          <div className="flex items-center justify-center w-full px-10">
+          <div className="flex w-full items-center justify-center px-10">
             <div className="flex flex-col">
               <label
                 htmlFor={`q${index + 1}-y`}
-                className="bg-sky-400 hover:cursor-pointer font-semibold text-lg px-9 py-3 m-5 rounded-md text-white"
+                className="m-5 rounded-md bg-sky-400 px-9 py-3 text-lg font-semibold text-white hover:cursor-pointer"
               >
                 Yes
               </label>
@@ -49,7 +49,7 @@ export const Form = () => {
             <div className="flex flex-col">
               <label
                 htmlFor={`q${index + 1}-n`}
-                className="bg-rose-600 hover:cursor-pointer font-semibold text-lg px-9 py-3 m-5 rounded-md text-white"
+                className="m-5 rounded-md bg-rose-600 px-9 py-3 text-lg font-semibold text-white hover:cursor-pointer"
               >
                 No
               </label>
@@ -62,15 +62,15 @@ export const Form = () => {
             </div>
           </div>
           {index < questions.length - 1 && (
-            <hr className="my-12 w-1/2 mx-auto border-t-2 border-gray-400" />
+            <hr className="mx-auto my-12 w-1/2 border-t-2 border-gray-400" />
           )}
         </div>
       ))}
-      <hr className="my-12 w-1/2 mx-auto border-t-2 border-gray-400" />
-      <div className="flex justify-center mt-4">
+      <hr className="mx-auto my-12 w-1/2 border-t-2 border-gray-400" />
+      <div className="mt-4 flex justify-center">
         <button
           type="submit"
-          className="bg-blue-600 font-semibold text-lg px-9 py-3 rounded-md text-white"
+          className="rounded-md bg-blue-600 px-9 py-3 text-lg font-semibold text-white"
         >
           診断
         </button>

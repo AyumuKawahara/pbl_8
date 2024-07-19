@@ -7,8 +7,8 @@ export const Univs = ({ answer }) => {
     dep_id: [] as number[],
   }
 
-  var rikei: number = 0
-  var bunkei: number = 0
+  let rikei: number = 0
+  let bunkei: number = 0
 
   // 医学部:1 理学部:2 工学部:3
   // 薬学部:4 農学部:5 情報学部:6 建築学部:7
@@ -93,30 +93,29 @@ export const Univs = ({ answer }) => {
 
   let fstfunivs
 
-  if(stfunivs.length <= 5) fstfunivs = stfunivs
+  if (stfunivs.length <= 5) fstfunivs = stfunivs
   else fstfunivs = stfunivs.slice(0, 5)
 
   // const stfunivs = filunivs.filter((filuniv) => user.bunri === filuniv.bunri)
   return (
-
     <>
       <div className="my-10"></div>
-      <p className=" text-5xl text-left">あなたの診断結果は</p>
+      <p className=" text-left text-5xl">あなたの診断結果は</p>
       <div className="my-10"></div>
       {fstfunivs.map((univ) => (
         <div
           key={univ.univ_id}
-          className="w-[1000px] h-[300px] relative border p-4 mb-[200px]"
+          className="relative mb-[200px] h-[300px] w-[1000px] border p-4"
         >
-          <div className="absolute h-[240px] w-[600px] z-10 top-0 left-0 bg-[#c3f2ff] p-2 rounded-md py-4">
+          <div className="absolute left-0 top-0 z-10 h-[240px] w-[600px] rounded-md bg-[#c3f2ff] p-2 py-4">
             <p className="text-center text-7xl ">{univ.univ_name}</p>
             <div className="my-4"></div>
             <p className="text-center text-6xl">{univ.dep}</p>
           </div>
-          <div className="flex-grow"></div> {/* 上下の間隔を確保 */}
-          <div className="absolute bottom-0 right-0  h-[180px] w-[480px] bg-teal-500 p-2 rounded-md py-4">
+          <div className="grow"></div> {/* 上下の間隔を確保 */}
+          <div className="absolute bottom-0 right-0  h-[180px] w-[480px] rounded-md bg-teal-500 p-2 py-4">
             <div className="my-4"></div>
-            <p className="text-xl text-center px-20">{univ.desc}</p>
+            <p className="px-20 text-center text-xl">{univ.desc}</p>
           </div>
         </div>
       ))}
