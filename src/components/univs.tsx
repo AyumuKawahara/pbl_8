@@ -104,7 +104,7 @@ export const Univs = ({ answer }) => {
       {fstfunivs.map((univ) => (
         <div
           key={univ.univ_id}
-          className="w-[1000px] h-[300px] relative border p-4 mb-10"
+          className="w-[1000px] h-[300px] relative border p-4 mb-[200px]"
         >
           <div className="absolute h-[240px] w-[600px] z-10 top-0 left-0 bg-[#c3f2ff] p-2 rounded-md py-4">
             <p className="text-center text-7xl ">{univ.univ_name}</p>
